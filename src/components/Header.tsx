@@ -1,8 +1,6 @@
-import React from 'react'
 
-type Props = {}
 
-const Header = (props: Props) => {
+const Header = () => {
   return (
     <div>
         <img src="/logo.jpg" alt='logo' className='p-6 '></img>

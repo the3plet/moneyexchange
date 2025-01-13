@@ -1,4 +1,3 @@
-import React from "react";
 
 type Tcurrency = {
   country: string;
@@ -11,7 +10,7 @@ type Tcurrency = {
 
 const currencyData: Tcurrency[] = [
   {
-    country: "United States",
+    country: "Dollar",
     flag: "https://flagcdn.com/us.svg",
     currency: "USD",
     buyRate: 82.5,
@@ -19,7 +18,7 @@ const currencyData: Tcurrency[] = [
     lastUpdated: "a second ago",
   },
   {
-    country: "European Union",
+    country: "Euro",
     flag: "https://flagcdn.com/eu.svg",
     currency: "EUR",
     buyRate: 89.5,
@@ -27,7 +26,7 @@ const currencyData: Tcurrency[] = [
     lastUpdated: "5 minutes ago",
   },
   {
-    country: "United Kingdom",
+    country: "Pound",
     flag: "https://flagcdn.com/gb.svg",
     currency: "GBP",
     buyRate: 103.5,
@@ -35,15 +34,15 @@ const currencyData: Tcurrency[] = [
     lastUpdated: "10 minutes ago",
   },
   {
-    country: "India",
+    country: "Rupee",
     flag: "https://flagcdn.com/in.svg",
     currency: "INR",
-    buyRate: 1.0,
-    sellRate: 1.0,
+    buyRate: 1.000,
+    sellRate: 1.000,
     lastUpdated: "30 minutes ago",
   },
   {
-    country: "Australia",
+    country: "ADollar",
     flag: "https://flagcdn.com/au.svg",
     currency: "AUD",
     buyRate: 53.5,
@@ -52,9 +51,9 @@ const currencyData: Tcurrency[] = [
   },
 ];
 
-type Props = {};
 
-const CardUI = (props: Props) => {
+
+const CardUI = () => {
   return (
     <div className="flex flex-col space-y-6 px-8">
       {currencyData.map((data,index) => (
