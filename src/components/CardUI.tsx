@@ -56,26 +56,27 @@ type Props = {};
 
 const CardUI = (props: Props) => {
   return (
-    <div className="flex flex-col">
-      {currencyData.map((data) => (
-        <div className="flex">
-          <div>
+    <div className="flex flex-col space-y-6 px-8">
+      {currencyData.map((data,index) => (
+        <div 
+        className={`flex items-center justify-between p-4 rounded-lg shadow-md ${index % 2 === 0 ? 'bg-[#ECEBDE]' : null}`}        key={data.currency}>
+          <div className="flex items-center gap-4">
             <img
               src={data.flag}
               className="w-20 h-20 rounded-full object-cover"
             />
-            <div>
-              <h1>{data.country}</h1>
-              <h1>{data.currency}</h1>
+            <div className="">
+              <h1 className="text-xl font-bold font-serif">{data.country}</h1>
+              <h1 className="text-2xl font-mono">{data.currency}</h1>
             </div>
           </div>
-          <div>
-            <h1>{data.buyRate}</h1>
-            <h1>{data.lastUpdated}</h1>
+          <div className="text-left">
+            <h1 className="text-2xl font-bold font-sans">{data.buyRate}</h1>
+            <h1 className="text-xl font-mono">{data.lastUpdated}</h1>
           </div>
-          <div>
-            <h1>{data.sellRate}</h1>
-            <h1>{data.lastUpdated}</h1>
+          <div className="text-left">
+            <h1 className="text-2xl font-bold font-sans">{data.sellRate}</h1>
+            <h1 className="text-xl font-mono">{data.lastUpdated}</h1>
           </div>
         </div>
       ))}
