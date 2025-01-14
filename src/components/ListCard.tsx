@@ -53,7 +53,7 @@ const currencyData: Tcurrency[] = [
 
 
 
-const CardUI = () => {
+const ListCard = () => {
   return (
     <div className="flex flex-col space-y-6 px-8">
       {currencyData.map((data,index) => (
@@ -83,4 +83,4 @@ const CardUI = () => {
   );
 };
 
-export default CardUI;
+export default ListCard;

@@ -1,15 +1,18 @@
 import Carousel from "./components/Carousel";
-import CardUI from "./components/CardUI";
 import Notification from "./components/Notification";
 import Nav from "./components/Nav";
+import ListCard from "./components/ListCard";
+import { useState } from "react";
+import GridCard from "./components/GridCard";
 
 
 const App = () => {
+  const [list,setList]= useState<boolean>(false);
   return (
     <div className="">
-     <Nav/>
+     <Nav list={list} setList={setList}/>
       <Carousel />
-      <CardUI/>
+      {list ?  <ListCard/> : <GridCard/>}
       <Notification/>
     </div>
   );
