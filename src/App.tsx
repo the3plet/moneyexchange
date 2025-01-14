@@ -12,7 +12,7 @@ const App = () => {
     <div className="">
      <Nav list={list} setList={setList}/>
       <Carousel />
-      {list ?  <ListCard/> : <GridCard/>}
+      {list ? <ListCard/> : <GridCard/>}
       <Notification/>
     </div>
   );

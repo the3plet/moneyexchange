@@ -6,6 +6,9 @@ module.exports = {
       animation: {
         scroll: "scroll 10s linear infinite",
       },
+      fontFamily: {
+        Barlow: ['Barlow Condensed', 'serif'],
+      },
       keyframes: {
         scroll: {
           "0%": { transform: "translateX(100%)" },
