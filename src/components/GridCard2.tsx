@@ -7,41 +7,7 @@ type Tcurrency = {
   };
   
   const currencyData: Tcurrency[] = [
-    {
-      flag: "https://flagcdn.com/us.svg",
-      currency: "USD",
-      buyRate: 82.5,
-      sellRate: 83.5,
-      lastUpdated: "a second ago",
-    },
-    {
-      flag: "https://flagcdn.com/eu.svg",
-      currency: "EUR",
-      buyRate: 89.5,
-      sellRate: 90.5,
-      lastUpdated: "5 minutes ago",
-    },
-    {
-      flag: "https://flagcdn.com/gb.svg",
-      currency: "GBP",
-      buyRate: 103.5,
-      sellRate: 104.5,
-      lastUpdated: "10 minutes ago",
-    },
-    {
-      flag: "https://flagcdn.com/in.svg",
-      currency: "INR",
-      buyRate: 1.0,
-      sellRate: 1.0,
-      lastUpdated: "30 minutes ago",
-    },
-    {
-      flag: "https://flagcdn.com/au.svg",
-      currency: "AUD",
-      buyRate: 53.5,
-      sellRate: 54.5,
-      lastUpdated: "1 hour ago",
-    },
+    
   ];
   
   const GridCard = () => {

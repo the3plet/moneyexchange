@@ -8,6 +8,7 @@ module.exports = {
       },
       fontFamily: {
         Barlow: ['Barlow Condensed', 'serif'],
+       Poppins: ["Poppins", 'serif']
       },
       keyframes: {
         scroll: {

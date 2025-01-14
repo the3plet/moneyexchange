@@ -1,4 +1,5 @@
 type Tcurrency = {
+  id:number;
   flag: string;
   currency: string;
   buyRate: number;
@@ -6,79 +7,120 @@ type Tcurrency = {
 };
 
 const currencyData: Tcurrency[] = [
-    {
-      flag: "https://flagcdn.com/us.svg",
-      currency: "USD",
-      buyRate: 820.50,
-      sellRate: 830.50,
-    },
-    {
-      flag: "https://flagcdn.com/eu.svg",
-      currency: "EUR",
-      buyRate: 890.75,
-      sellRate: 900.75,
-    },
-    {
-        flag: "https://flagcdn.com/gb.svg",
-        currency: "GBP",
-        buyRate: 305.25,
-        sellRate: 400.25,
-      },
-    {
-      flag: "https://flagcdn.com/au.svg",
-      currency: "AUD",
-      buyRate: 535.45,
-      sellRate: 545.45,
-    },
-    {
-      flag: "https://flagcdn.com/jp.svg",
-      currency: "JPY",
-      buyRate: 100.13,
-      sellRate: 101.13,
-    },
-    {
-      flag: "https://flagcdn.com/ca.svg",
-      currency: "CAD",
-      buyRate: 620.35,
-      sellRate: 630.35,
-    },
-    {
-      flag: "https://flagcdn.com/ch.svg",
-      currency: "CHF",
-      buyRate: 910.85,
-      sellRate: 920.85,
-    },
-    {
-      flag: "https://flagcdn.com/sg.svg",
-      currency: "SGD",
-      buyRate: 600.95,
-      sellRate: 610.95,
-    },
-    {
-      flag: "https://flagcdn.com/nz.svg",
-      currency: "NZD",
-      buyRate: 520.15,
-      sellRate: 530.15,
-    },
-    {
-      flag: "https://flagcdn.com/se.svg",
-      currency: "SEK",
-      buyRate: 880.10,
-      sellRate: 890.10,
-    },
-    {
-      flag: "https://flagcdn.com/za.svg",
-      currency: "ZAR",
-      buyRate: 450.30,
-      sellRate: 460.30,
-    },
-    {
-      flag: "https://flagcdn.com/cn.svg",
-      currency: "CNY",
-      buyRate: 730.25,
-      sellRate: 740.25,
-    },
-  ];
+  {
+    id: 1,
+    flag: "https://flagcdn.com/us.svg",
+    currency: "USD",
+    buyRate: 820.50,
+    sellRate: 830.50,
+  },
+  {
+    id: 2,
+    flag: "https://flagcdn.com/eu.svg",
+    currency: "EUR",
+    buyRate: 890.75,
+    sellRate: 900.75,
+  },
+  {
+    id: 3,
+    flag: "https://flagcdn.com/gb.svg",
+    currency: "GBP",
+    buyRate: 305.25,
+    sellRate: 400.25,
+  },
+  {
+    id: 4,
+    flag: "https://flagcdn.com/au.svg",
+    currency: "AUD",
+    buyRate: 535.45,
+    sellRate: 545.45,
+  },
+  {
+    id: 5,
+    flag: "https://flagcdn.com/jp.svg",
+    currency: "JPY",
+    buyRate: 100.13,
+    sellRate: 101.13,
+  },
+  {
+    id: 6,
+    flag: "https://flagcdn.com/ca.svg",
+    currency: "CAD",
+    buyRate: 620.35,
+    sellRate: 630.35,
+  },
+  {
+    id: 7,
+    flag: "https://flagcdn.com/ch.svg",
+    currency: "CHF",
+    buyRate: 910.85,
+    sellRate: 920.85,
+  },
+  {
+    id: 8,
+    flag: "https://flagcdn.com/sg.svg",
+    currency: "SGD",
+    buyRate: 600.95,
+    sellRate: 610.95,
+  },
+  {
+    id: 9,
+    flag: "https://flagcdn.com/nz.svg",
+    currency: "NZD",
+    buyRate: 520.15,
+    sellRate: 530.15,
+  },
+  {
+    id: 10,
+    flag: "https://flagcdn.com/se.svg",
+    currency: "SEK",
+    buyRate: 880.10,
+    sellRate: 890.10,
+  },
+  {
+    id: 11,
+    flag: "https://flagcdn.com/za.svg",
+    currency: "ZAR",
+    buyRate: 450.30,
+    sellRate: 460.30,
+  },
+  {
+    id: 12,
+    flag: "https://flagcdn.com/cn.svg",
+    currency: "CNY",
+    buyRate: 730.25,
+    sellRate: 740.25,
+  },
+  {
+    id: 13,
+    flag: "https://flagcdn.com/in.svg",
+    currency: "INR",
+    buyRate: 75.00,
+    sellRate: 76.00,
+  },
+  {
+    id: 14,
+    flag: "https://flagcdn.com/kr.svg",
+    currency: "KRW",
+    buyRate: 930.10,
+    sellRate: 940.10,
+  },
+  {
+    id: 15,
+    flag: "https://flagcdn.com/za.svg",
+    currency: "ZAR",
+    buyRate: 450.25,
+    sellRate: 460.25,
+  },
+  {
+    id: 16,
+    flag: "https://flagcdn.com/sa.svg",
+    currency: "SAR",
+    buyRate: 220.15,
+    sellRate: 230.15,
+  },
+];
+
   
 
 const GridCard = () => {
@@ -104,7 +146,7 @@ const GridCard = () => {
           </div>
           <div className="flex gap-4 justify-between gap-x-6 mr-6">
             <div className="text-left flex flex-col items-end ">
-              <h1 className="text-lg font-bold text-gray-500 ">
+              <h1 className="text-lg font-bold  ">
                 {data.sellRate ? "Buy" : "Loading..."}
               </h1>
               <h1 className="text-4xl font-bold font-Barlow">

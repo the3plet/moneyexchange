@@ -1,7 +1,7 @@
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 /* Tailwind */
 @tailwind base;
 @tailwind components;
