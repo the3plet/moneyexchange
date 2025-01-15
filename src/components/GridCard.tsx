@@ -225,7 +225,7 @@ const GridCard = () => {
         </CarouselContent>
       </Carousel>
       <Carousel
-        className="ml-4"
+        className="ml-4 "
         plugins={[
           Autoplay({
             delay: 3000,

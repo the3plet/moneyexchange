@@ -1,4 +1,3 @@
-import Carousel from "./components/Banner";
 import Notification from "./components/Notification";
 import Nav from "./components/Nav";
 import ListCard from "./components/ListCard";

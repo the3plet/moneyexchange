@@ -3,7 +3,6 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
 } from "./ui/carousel";
 
 const bannerImages = [
