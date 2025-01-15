@@ -1,9 +1,10 @@
-import Carousel from "./components/Carousel";
+import Carousel from "./components/Banner";
 import Notification from "./components/Notification";
 import Nav from "./components/Nav";
 import ListCard from "./components/ListCard";
 import { useState } from "react";
 import GridCard from "./components/GridCard";
+import Banner from "./components/Banner";
 
 
 const App = () => {
@@ -11,7 +12,7 @@ const App = () => {
   return (
     <div className="">
      <Nav list={list} setList={setList}/>
-      <Carousel />
+      <Banner/>
       {list ? <ListCard/> : <GridCard/>}
       <Notification/>
     </div>
