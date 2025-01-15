@@ -242,7 +242,7 @@ const GridCard = () => {
             >
              <div
             className={`flex items-center p-1 rounded-lg shadow-md border-2 py-3 tv-1080x1920:py-7 tv-900x1600:py-5 tv-768x1366:py-2 justify-between ${
-              Math.floor(index / 2) % 2 === 0 ? "bg-[#F2EFE5]" : ""
+              Math.floor(index / 2) % 2 === 1 ? "bg-[#F2EFE5]" : ""
             }`}
             key={data.currency}
           >
